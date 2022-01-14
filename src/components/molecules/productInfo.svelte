@@ -1,4 +1,6 @@
 <script>
+	import SmallButton from '../atoms/smallButton.svelte';
+
 	export let product;
 	import Card from '../atoms/smallCard.svelte';
 </script>
@@ -8,6 +10,7 @@
 	<p>
 		{product.product_name}
 	</p>
+	<SmallButton text={'KUP TERAZ'} disabled={!product.in_stock} />
 </Card>
 
 <style>
@@ -20,5 +23,6 @@
 	img {
 		width: 100px;
 		height: 100px;
+		margin: auto;
 	}
 </style>
