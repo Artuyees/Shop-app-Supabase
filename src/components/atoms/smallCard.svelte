@@ -1,0 +1,19 @@
+<script>
+</script>
+
+<div class="card">
+	<slot />
+</div>
+
+<style>
+	.card {
+		display: grid;
+		height: 130px;
+		box-shadow: 0 0 1px black;
+		padding: 10px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 20%;
+	}
+</style>
