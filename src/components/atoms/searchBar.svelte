@@ -1,4 +1,5 @@
 <script>
+	import SearchIcon from './searchIcon.svelte';
 </script>
 
 <div class="searchbar">
@@ -19,19 +20,20 @@
 			/>
 		</svg></button
 	>
+	<SearchIcon class="mobile-icon" />
 </div>
 
 <style>
 	.searchbar {
 		display: flex;
 		justify-content: space-between;
-		width: 50%;
+		width: 30%;
 		height: 60px;
-		border: none;
+		border: 1px solid black;
+		border-radius: 10px;
 		background-color: #ffffff;
 	}
 	.icon {
-		width: 100%;
 		height: 100%;
 	}
 	.searchbar__input {
@@ -41,16 +43,20 @@
 		background: none;
 		font-size: 24px;
 	}
+	@media (max-width: 900px) {
+		.searchbar {
+			display: none;
+		}
+	}
 	.searchbar__input:focus {
-		border: none;
+		outline: none;
 	}
 	.searchbar__button {
-		width: 15%;
 		height: 100%;
-		border: none;
 		background: none;
 		align-items: center;
 		justify-content: center;
+		border: none;
 	}
 	.searchbar__button:hover {
 		transition: all 0.3s;

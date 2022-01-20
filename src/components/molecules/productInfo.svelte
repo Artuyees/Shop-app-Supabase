@@ -6,14 +6,24 @@
 </script>
 
 <Card>
-	<img src={product.img} alt="xd" />
+	<a href={`product/${product.id}`}>
+		<img src={product.img} alt="xd" />
+	</a>
 	<p>
 		{product.product_name}
 	</p>
-	<SmallButton disabled={!product.in_stock} />
+	<div class="info">
+		<p>{product.price}</p>
+		<SmallButton disabled={!product.in_stock} />
+	</div>
 </Card>
 
 <style>
+	.info {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
 	p {
 		white-space: nowrap;
 		overflow: hidden;
@@ -22,7 +32,7 @@
 
 	img {
 		width: 10em;
-		height: m;
+		height: 10em;
 		margin: auto;
 	}
 </style>

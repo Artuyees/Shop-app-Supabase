@@ -11,11 +11,13 @@
 
 <style>
 	.main {
+		position: sticky;
+		border-bottom: 1px solid gray;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 		height: 100px;
 		width: 100%;
-		background-color: #c4c4c4;
+		background-color: white;
 	}
 </style>

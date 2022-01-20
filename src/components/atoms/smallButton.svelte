@@ -28,7 +28,6 @@
 		border-radius: 100%;
 		background-color: var(--color, green);
 		border: 1px solid black;
-		margin: auto;
 		align-items: center;
 	}
 	.button__small svg {
