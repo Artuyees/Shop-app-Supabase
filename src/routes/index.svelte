@@ -2,6 +2,7 @@
 	import supabase from '$lib/db';
 	import Product from '../components/molecules/productInfo.svelte';
 	import { onMount } from 'svelte';
+	import MainBar from '../components/molecules/mainBar.svelte';
 
 	let products = [];
 	onMount(async () => {
@@ -12,6 +13,7 @@
 </script>
 
 <div class="content">
+	<MainBar />
 	{#each products as product}
 		<Product {product} />
 	{/each}

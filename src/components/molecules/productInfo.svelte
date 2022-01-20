@@ -2,7 +2,7 @@
 	import SmallButton from '../atoms/smallButton.svelte';
 
 	export let product;
-	import Card from '../atoms/smallCard.svelte';
+	import Card from '../atoms/card.svelte';
 </script>
 
 <Card>
@@ -10,7 +10,7 @@
 	<p>
 		{product.product_name}
 	</p>
-	<SmallButton text={'KUP TERAZ'} disabled={!product.in_stock} />
+	<SmallButton disabled={!product.in_stock} />
 </Card>
 
 <style>
