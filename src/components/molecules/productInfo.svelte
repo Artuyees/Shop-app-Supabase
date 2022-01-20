@@ -21,8 +21,8 @@
 	}
 
 	img {
-		width: 100px;
-		height: 100px;
+		width: 10em;
+		height: m;
 		margin: auto;
 	}
 </style>

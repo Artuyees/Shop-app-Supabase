@@ -3,6 +3,7 @@
 	import Product from '../components/molecules/productInfo.svelte';
 	import { onMount } from 'svelte';
 	import MainBar from '../components/molecules/mainBar.svelte';
+	import Products from '../components/molecules/products.svelte';
 
 	let products = [];
 	onMount(async () => {
@@ -14,9 +15,11 @@
 
 <div class="content">
 	<MainBar />
-	{#each products as product}
-		<Product {product} />
-	{/each}
+	<Products>
+		{#each products as product}
+			<Product {product} />
+		{/each}
+	</Products>
 </div>
 
 <style>
