@@ -16,7 +16,6 @@
 
 <style>
 	.main {
-		position: sticky;
 		border-bottom: 1px solid gray;
 		display: flex;
 		align-items: center;

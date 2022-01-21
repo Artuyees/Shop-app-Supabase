@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import MainBar from '../components/molecules/mainBar.svelte';
 	import Products from '../components/molecules/products.svelte';
+	import PromotionsBar from '../components/molecules/PromotionsBar.svelte';
 
 	let products = [];
 	onMount(async () => {
@@ -11,10 +12,19 @@
 		products = data;
 		console.table(products);
 	});
+
+	const listOfTexts = [
+		'Polecamy:',
+		'Najpopularniejsze dzisiaj:',
+		'Bierz póki jeszcze są:',
+		'Ostatnie sztuki:',
+		'Zobacz co mamy w sprzedaży:'
+	];
 </script>
 
 <div class="content">
 	<MainBar />
+	<PromotionsBar list={listOfTexts} />
 	<Products>
 		{#each products as product}
 			<Product {product} />
