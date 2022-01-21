@@ -8,11 +8,12 @@
 <style>
 	.container {
 		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 5px;
-		width: fit-content;
-		padding: 20px 20px;
+		padding: 0px 20px;
 		border-right: 1px solid #f0f0f0;
 		border-left: 1px solid #f0f0f0;
-		margin-top: 30px;
 	}
 </style>

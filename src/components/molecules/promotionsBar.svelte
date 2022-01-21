@@ -1,8 +1,6 @@
 <script>
 	export let list;
-
 	const x = Math.floor(Math.random() * list.length);
-	console.log(list[x]);
 </script>
 
 <div class="bar">
@@ -13,10 +11,11 @@
 	.bar {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		background-color: #f0f0f0;
 		width: 100%;
-		height: fit-content;
+		margin-top: 10px;
 		padding: 10px;
-		font-size: large;
+		height: fit-content;
+		font-size: xx-large;
 	}
 </style>

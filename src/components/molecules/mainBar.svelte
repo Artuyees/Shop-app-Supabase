@@ -1,4 +1,5 @@
 <script>
+	import CartButton from '../atoms/cartButton.svelte';
 	import HomeButton from '../atoms/homeButton.svelte';
 	import Logo from '../atoms/logo.svelte';
 	import SearchBar from '../atoms/searchBar.svelte';
@@ -10,7 +11,10 @@
 	<Logo />
 	{#if mobile == false}
 		<SearchBar />
-		<HomeButton />
+		<div class="mainBar__icons">
+			<CartButton />
+			<HomeButton />
+		</div>
 	{/if}
 </div>
 
@@ -23,5 +27,8 @@
 		height: 100px;
 		width: 100%;
 		background-color: white;
+	}
+	.mainBar__icons {
+		display: flex;
 	}
 </style>
