@@ -20,6 +20,9 @@
 
 <style>
 	.main {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
 		border-bottom: 1px solid gray;
 		display: flex;
 		align-items: center;

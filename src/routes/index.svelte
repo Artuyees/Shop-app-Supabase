@@ -5,6 +5,7 @@
 	import MainBar from '../components/molecules/mainBar.svelte';
 	import Products from '../components/molecules/products.svelte';
 	import PromotionsBar from '../components/molecules/PromotionsBar.svelte';
+	import About from '../components/molecules/about.svelte';
 
 	let products = [];
 	onMount(async () => {
@@ -22,22 +23,23 @@
 	];
 </script>
 
+<MainBar />
 <div class="content">
-	<MainBar />
 	<PromotionsBar list={listOfTexts} />
 	<Products>
 		{#each products as product}
 			<Product {product} />
 		{/each}
 	</Products>
+	<About />
 </div>
 
 <style>
 	.content {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
+		flex-direction: column;
+		flex: 1;
 		justify-content: center;
+		z-index: -1;
 	}
 </style>
