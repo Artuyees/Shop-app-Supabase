@@ -7,7 +7,7 @@
 
 <style>
 	.card {
-		width: 250px;
+		width: 200px;
 		display: flex;
 		flex-direction: column;
 		box-shadow: 0 0 1px black;
@@ -15,5 +15,6 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		margin: 10px;
 	}
 </style>

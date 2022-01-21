@@ -1,12 +1,17 @@
 <script>
 	import HomeButton from '../atoms/homeButton.svelte';
+	import Logo from '../atoms/logo.svelte';
 	import SearchBar from '../atoms/searchBar.svelte';
+
+	let mobile = false;
 </script>
 
 <div class="main">
-	<img src="../../../static/logo.png" alt="" />
-	<SearchBar />
-	<HomeButton />
+	<Logo />
+	{#if mobile == false}
+		<SearchBar />
+		<HomeButton />
+	{/if}
 </div>
 
 <style>
