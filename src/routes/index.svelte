@@ -23,23 +23,30 @@
 	];
 </script>
 
-<MainBar />
-<div class="content">
-	<PromotionsBar list={listOfTexts} />
-	<Products>
-		{#each products as product}
-			<Product {product} />
-		{/each}
-	</Products>
+<div class="everything">
+	<MainBar />
+	<div class="main__content">
+		<PromotionsBar list={listOfTexts} />
+		<Products>
+			{#each products as product}
+				<Product {product} />
+			{/each}
+		</Products>
+	</div>
 	<About />
 </div>
 
 <style>
-	.content {
+	.main__content {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
 		justify-content: center;
 		z-index: -1;
+	}
+	.everything {
+		min-height: 100vh;
+		display: block;
+		position: relative;
 	}
 </style>
