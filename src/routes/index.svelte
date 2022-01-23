@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 	import MainBar from '../components/molecules/mainBar.svelte';
 	import Products from '../components/molecules/products.svelte';
-	import PromotionsBar from '../components/molecules/PromotionsBar.svelte';
+	import PromotionsBar from '../components/molecules/promotionsBar.svelte';
 	import About from '../components/molecules/about.svelte';
 
 	let products = [];
