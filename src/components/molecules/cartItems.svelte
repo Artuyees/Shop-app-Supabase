@@ -7,7 +7,12 @@
 		<img src={item.img} alt="zdjęcie produktu" />
 	</div>
 	<span>{item.product_name}</span>
-	<span>{item.price} pln</span>
+	<span
+		>{#if item.on_sale == null}{item.price}{:else}{(
+				item.price -
+				item.price * (item.on_sale / 100)
+			).toFixed(2)}{/if} pln</span
+	>
 </div>
 
 <style>
