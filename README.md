@@ -8,4 +8,3 @@
 # To do
 
 - cart
-- searchbar
