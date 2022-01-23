@@ -15,7 +15,14 @@
 		</div>
 	</a>
 	<div class="info">
-		<p>{product.price}</p>
+		{#if product.on_sale == null}<h3>{product.price} pln</h3>{:else}<h3>
+				<div class="sale">
+					<span class="old_price">{product.price} pln</span>
+					<span class="new_price"
+						>{(product.price - product.price * (product.on_sale / 100)).toFixed(2)} pln</span
+					>
+				</div>
+			</h3>{/if}
 		<SmallButton disabled={!product.in_stock} />
 	</div>
 </Card>
@@ -36,9 +43,11 @@
 		color: black;
 	}
 	.info {
+		height: 20%;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 	p {
 		white-space: nowrap;
@@ -51,5 +60,17 @@
 		height: 150px;
 		object-fit: cover;
 		margin: auto;
+	}
+	.sale {
+		display: flex;
+		flex-direction: column;
+	}
+	.old_price {
+		color: gray;
+		text-decoration: line-through;
+	}
+	.new_price {
+		color: red;
+		font-weight: bold;
 	}
 </style>
