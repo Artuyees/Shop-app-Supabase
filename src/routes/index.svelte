@@ -8,7 +8,7 @@
 
 	let products = [];
 	onMount(async () => {
-		let { data, error } = await supabase.from('Products').select('*').limit(4);
+		let { data, error } = await supabase.from('Products').select('*').limit(3);
 		products = data;
 	});
 
@@ -26,5 +26,20 @@
 	{#each products as product}
 		<Product {product} />
 	{/each}
-	<Card />
+	<Card><a href="/search"><h1 class="link">ZOBACZ WIĘCEJ PRODUKTÓW</h1></a></Card>
 </Products>
+
+<style>
+	a {
+		text-decoration: none;
+		color: black;
+		background-color: white;
+		width: inherit;
+		height: 100%;
+	}
+	a:hover {
+		transform: scale(1.02);
+		transition: all 0.2s;
+		background-color: #f0f0f0;
+	}
+</style>

@@ -1,9 +1,10 @@
 <script>
+	import { searchTerm } from '../../stores/searchStore';
 	import SearchIcon from './searchBarButton.svelte';
 </script>
 
 <div class="searchbar">
-	<input type="text" class="searchbar__input" />
+	<input type="text" class="searchbar__input" bind:value={$searchTerm} />
 	<SearchIcon class="mobile-icon" />
 </div>
 
@@ -19,7 +20,7 @@
 	}
 	.searchbar__input {
 		width: 85%;
-		height: 60px;
+		height: 40px;
 		border: none;
 		background: none;
 		font-size: 24px;

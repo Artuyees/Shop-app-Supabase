@@ -10,7 +10,7 @@
 		width: 200px;
 		display: flex;
 		flex-direction: column;
-		box-shadow: 0 0 1px black;
+		border: 1px solid #d0d0d0;
 		padding: 10px;
 		align-items: center;
 		justify-content: center;
