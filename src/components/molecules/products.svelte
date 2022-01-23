@@ -15,6 +15,6 @@
 		padding: 0px 20px;
 		border-right: 1px solid #f0f0f0;
 		border-left: 1px solid #f0f0f0;
-		padding-bottom: 200px;
+		margin-bottom: 200px;
 	}
 </style>

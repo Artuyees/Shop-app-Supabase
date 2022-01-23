@@ -12,7 +12,7 @@
 		display: flex;
 		justify-content: space-between;
 		width: 30%;
-		height: 60px;
+		height: 40px;
 		border: 1px solid black;
 		border-radius: 10px;
 		background-color: #ffffff;

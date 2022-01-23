@@ -27,7 +27,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		height: 100px;
+		height: 50px;
 		width: 100%;
 		background-color: white;
 	}
