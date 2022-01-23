@@ -1,4 +1,4 @@
-# Simple e-commerce website
+# Simple online shop website
 
 # Features
 
