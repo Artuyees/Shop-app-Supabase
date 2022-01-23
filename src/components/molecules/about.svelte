@@ -17,7 +17,7 @@
 	}
 	.about__container {
 		display: grid;
-		gap: 1em 20%;
+		gap: 10px;
 		grid-template-columns: 1fr 1fr;
 		height: fit-content;
 		width: 100%;
