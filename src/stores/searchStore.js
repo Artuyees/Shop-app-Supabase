@@ -1,3 +1,4 @@
 import { writable } from 'svelte/store';
-
-export let searchTerm = writable('');
+import { browser } from '$app/env';
+export let searchTerm = writable(browser && (localStorage.getItem('searchTerm') || ''));
+searchTerm.subscribe((val) => browser && localStorage.setItem('searchTerm', val));
