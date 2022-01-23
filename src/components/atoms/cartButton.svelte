@@ -22,8 +22,8 @@
 	.cart__button {
 		text-decoration: none;
 		color: black;
-		width: 60px;
-		height: 60px;
+		width: 40px;
+		height: 40px;
 		border: none;
 		background: transparent;
 	}
