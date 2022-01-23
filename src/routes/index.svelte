@@ -9,7 +9,7 @@
 
 	let products = [];
 	onMount(async () => {
-		let { data, error } = await supabase.from('Products').select('*');
+		let { data, error } = await supabase.from('Products').select('*').limit(5);
 		products = data;
 		console.table(products);
 	});
