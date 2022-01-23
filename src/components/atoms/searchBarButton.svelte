@@ -35,6 +35,7 @@
 		background: none;
 		align-items: center;
 		justify-content: center;
+		color: black;
 		border: none;
 	}
 	.searchbar__button:hover {
