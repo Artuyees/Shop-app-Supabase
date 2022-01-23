@@ -49,7 +49,7 @@
 		margin-right: auto;
 		margin-bottom: 200px;
 		display: flex;
-		max-width: 60%;
+		max-width: min-content;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
@@ -58,6 +58,12 @@
 		padding: 20px 20px;
 		border: 1px solid #f0f0f0;
 		border-radius: 10px;
+	}
+
+	@media (min-width: 766px) {
+		.card {
+			max-width: 50%;
+		}
 	}
 	.price__tag {
 		display: flex;
