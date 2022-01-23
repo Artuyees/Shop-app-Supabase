@@ -32,7 +32,7 @@
 							>
 						</div>
 					</h3>{/if}
-				{#if !product.in_stock}Out of stock{/if}
+				{#if !product.in_stock}WYPRZEDANE{/if}
 				<div class="price__tag--button">
 					<SmallButton disabled={!product.in_stock} />
 				</div>
@@ -49,11 +49,10 @@
 		margin-right: auto;
 		margin-bottom: 200px;
 		display: flex;
-		max-width: min-content;
-		flex-direction: row;
+		max-width: max-content;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
 		gap: 10px;
 		padding: 20px 20px;
 		border: 1px solid #f0f0f0;
@@ -62,7 +61,14 @@
 
 	@media (min-width: 766px) {
 		.card {
+			flex-direction: row;
+			wrap: nowrap;
 			max-width: 50%;
+		}
+		img {
+			width: 400px;
+			height: 400px;
+			padding-right: 20px;
 		}
 	}
 	.price__tag {
@@ -93,8 +99,7 @@
 		font-weight: bold;
 	}
 	img {
-		width: 400px;
-		height: 400px;
+		width: 100%;
 		object-fit: cover;
 	}
 </style>
