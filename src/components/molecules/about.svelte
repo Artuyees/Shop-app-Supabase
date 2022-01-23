@@ -19,7 +19,6 @@
 		display: grid;
 		gap: 10px;
 		grid-template-columns: 1fr 1fr;
-		height: fit-content;
 		width: 100%;
 		text-align: center;
 		background-color: #f0f0f0;
