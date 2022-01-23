@@ -30,6 +30,9 @@
 </Products>
 
 <style>
+	h1 {
+		line-height: 200%;
+	}
 	a {
 		text-decoration: none;
 		color: black;
