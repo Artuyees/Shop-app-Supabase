@@ -2,12 +2,12 @@
 </script>
 
 <div class="about__container">
-	<a href="/about">About page</a>
-	<a href="/about">About page</a>
-	<a href="/about">About page</a>
-	<a href="/about">About page</a>
-	<a href="/about">About page</a>
-	<a href="/about">About page</a>
+	<a href="/about">About</a>
+	<a href="/about">About</a>
+	<a href="/about">About</a>
+	<a href="/about">About</a>
+	<a href="/about">About</a>
+	<a href="/about">About</a>
 </div>
 
 <style>
