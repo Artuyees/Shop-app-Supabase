@@ -4,7 +4,8 @@
 
 - Svelte front-end
 - Supabase as back-end
-- Items are added properly to cart and localStorage
+- Preserved cart on refresh
+- Search bar
 
 # To do
 
