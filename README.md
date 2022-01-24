@@ -8,4 +8,5 @@
 # To do
 
 - clean up spaghetti code
-- make cart Items stay in local storage
+- add alert when adding item to cart
+- fix mobile layout
