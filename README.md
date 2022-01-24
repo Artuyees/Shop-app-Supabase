@@ -7,4 +7,5 @@
 
 # To do
 
-- cart
+- clean up spaghetti code
+- make cart Items stay in local storage
