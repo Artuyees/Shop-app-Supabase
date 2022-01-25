@@ -23,6 +23,7 @@
 		gap: 15px 15px;
 		grid-template-areas: '. . . .';
 		align-items: center;
+		border-bottom: 1px solid #d0d0d0;
 	}
 	.item__info--image {
 		margin: 10px;

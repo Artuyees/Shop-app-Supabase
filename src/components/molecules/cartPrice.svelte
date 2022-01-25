@@ -17,8 +17,9 @@
 		min-width: fit-content;
 	}
 	input {
-		width: 25%;
-		height: 50px;
+		padding: 10px;
+		width: fit-content;
+		height: fit-content;
 		border: none;
 		border-radius: 10px;
 		background-color: orange;
