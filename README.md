@@ -4,8 +4,11 @@
 
 - Svelte front-end
 - Supabase as back-end
+- Preserved cart on refresh
+- Search bar
 
 # To do
 
 - clean up spaghetti code
-- make cart Items stay in local storage
+- add alert when adding item to cart
+- fix mobile layout
