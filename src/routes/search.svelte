@@ -1,6 +1,6 @@
 <script>
 	import { searchTerm } from '../stores/searchStore';
-	import Products from '../components/molecules/products.svelte';
+	import Products from '../components/organisms/products.svelte';
 	import Product from '../components/molecules/productInfo.svelte';
 	import { onMount } from 'svelte';
 	import supabase from '$lib/db';

@@ -3,7 +3,7 @@
 
 <a href="/">
 	<div class="container">
-		<span>BransoletkaCzasu.com</span>
+		<span>TimeBracelet.com</span>
 	</div>
 </a>
 

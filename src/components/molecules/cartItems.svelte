@@ -11,7 +11,7 @@
 		>{#if item.on_sale == null}{item.price}{:else}{(
 				item.price -
 				item.price * (item.on_sale / 100)
-			).toFixed(2)}{/if} pln</span
+			).toFixed(2)}{/if} €</span
 	>
 </div>
 

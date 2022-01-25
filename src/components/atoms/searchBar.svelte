@@ -4,7 +4,9 @@
 </script>
 
 <div class="searchbar">
-	<input type="text" class="searchbar__input" bind:value={$searchTerm} />
+	<form action="/search">
+		<input type="text" class="searchbar__input" bind:value={$searchTerm} />
+	</form>
 	<SearchIcon class="mobile-icon" />
 </div>
 

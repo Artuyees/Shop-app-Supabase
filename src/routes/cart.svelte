@@ -41,7 +41,7 @@
 		{/each}
 		<CartPrice {sum} />
 	{:else}
-		<h1>Twój koszyk jest pusty.</h1>
+		<h1>Your cart is empty.</h1>
 	{/if}
 </Cart>
 

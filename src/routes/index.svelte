@@ -2,7 +2,7 @@
 	import supabase from '$lib/db';
 	import Product from '../components/molecules/productInfo.svelte';
 	import { onMount } from 'svelte';
-	import Products from '../components/molecules/products.svelte';
+	import Products from '../components/organisms/products.svelte';
 	import PromotionsBar from '../components/molecules/promotionsBar.svelte';
 	import Card from '../components/atoms/card.svelte';
 

@@ -19,11 +19,11 @@
 		</div>
 	</a>
 	<div class="info">
-		{#if product.on_sale == null}<h3>{product.price} pln</h3>{:else}<h3>
+		{#if product.on_sale == null}<h3>{product.price} €</h3>{:else}<h3>
 				<div class="sale">
-					<span class="old_price">{product.price} pln</span>
+					<span class="old_price">{product.price} €</span>
 					<span class="new_price"
-						>{(product.price - product.price * (product.on_sale / 100)).toFixed(2)} pln</span
+						>{(product.price - product.price * (product.on_sale / 100)).toFixed(2)} €</span
 					>
 				</div>
 			</h3>{/if}

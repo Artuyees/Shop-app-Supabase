@@ -3,7 +3,7 @@
 </script>
 
 <div class="price__container">
-	FINALNY KOSZT: <h1>{Math.floor(sum)} pln</h1>
+	Final cost: <h1>{Math.floor(sum)} €</h1>
 	<input type="submit" value="ZAMÓW" />
 </div>
 
