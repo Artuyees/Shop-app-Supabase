@@ -1,8 +1,20 @@
 <script>
+	import { cartItems } from '../../stores/cartStore';
+	import { hidden, alertText } from '../../stores/alertStore';
 	export let disabled = false;
+	export let product;
+
+	const handleClick = () => {
+		$alertText = `Added ${product.product_name} to cart`;
+		$hidden = false;
+		$cartItems = [...$cartItems, product];
+		setTimeout(() => {
+			$hidden = true;
+		}, 3000);
+	};
 </script>
 
-<button class="button__small" {disabled} on:click>
+<button class="button__small" {disabled} on:click={handleClick}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		class="h-6 w-6"
@@ -22,14 +34,15 @@
 <style>
 	.button__small {
 		display: flex;
-		width: 30px;
-		height: 30px;
+		width: 32px;
+		height: 32px;
 		color: white;
 		border-radius: 100%;
 		background-color: var(--color, green);
 		border: 1px solid black;
 		align-items: center;
 	}
+
 	.button__small svg {
 		width: 30px;
 		height: 30px;

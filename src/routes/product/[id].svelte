@@ -8,7 +8,7 @@
 <script>
 	export let id;
 	import supabase from '$lib/db';
-	import SmallButton from '../../components/atoms/smallButton.svelte';
+	import SmallButton from '../../components/atoms/addToCartButton.svelte';
 	import { onMount } from 'svelte';
 	let products = [];
 	onMount(async () => {
@@ -34,7 +34,7 @@
 					</h3>{/if}
 				{#if !product.in_stock}WYPRZEDANE{/if}
 				<div class="price__tag--button">
-					<SmallButton disabled={!product.in_stock} />
+					<SmallButton disabled={!product.in_stock} {product} />
 				</div>
 			</div>
 			<p>{product.text}</p>

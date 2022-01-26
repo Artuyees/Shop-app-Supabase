@@ -1,12 +1,7 @@
 <script>
-	import SmallButton from '../atoms/smallButton.svelte';
-	import { cartItems } from '../../stores/cartStore';
-	export let product;
+	import SmallButton from '../atoms/addToCartButton.svelte';
 	import Card from '../atoms/card.svelte';
-
-	const handleClick = () => {
-		$cartItems = [...$cartItems, product];
-	};
+	export let product;
 </script>
 
 <Card>
@@ -27,7 +22,7 @@
 					>
 				</div>
 			</h3>{/if}
-		<SmallButton disabled={!product.in_stock} on:click={handleClick} />
+		<SmallButton disabled={!product.in_stock} {product} />
 	</div>
 </Card>
 

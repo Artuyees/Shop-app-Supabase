@@ -1,5 +1,5 @@
 <script>
-	import Cart from '../components/organisms/cart.svelte';
+	import Cart from '../components/organisms/cartContainer.svelte';
 
 	import CartItems from '../components/molecules/cartItems.svelte';
 
