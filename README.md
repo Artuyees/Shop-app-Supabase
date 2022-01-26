@@ -6,9 +6,9 @@
 - Supabase as back-end
 - Preserved cart on refresh
 - Search bar
+- Alert when adding items to cart
 
 # To do
 
 - clean up spaghetti code
-- add alert when adding item to cart
 - fix mobile layout
