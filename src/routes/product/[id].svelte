@@ -32,7 +32,7 @@
 							>
 						</div>
 					</h3>{/if}
-				{#if !product.in_stock}WYPRZEDANE{/if}
+				{#if !product.in_stock}SOLD OUT{/if}
 				<div class="price__tag--button">
 					<SmallButton disabled={!product.in_stock} {product} />
 				</div>
