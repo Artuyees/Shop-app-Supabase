@@ -23,7 +23,17 @@
 </script>
 
 <Products>
-	{#each filteredProducts as product}
-		<Product {product} />
-	{/each}
+	{#if filteredProducts.length > 0}
+		{#each filteredProducts as product}
+			<Product {product} />
+		{/each}
+	{:else}
+		<h1>No products found..</h1>
+	{/if}
 </Products>
+
+<style>
+	h1 {
+		color: gray;
+	}
+</style>
