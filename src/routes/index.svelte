@@ -13,11 +13,11 @@
 	});
 
 	const listOfTexts = [
-		'Polecamy:',
-		'Najpopularniejsze dzisiaj:',
-		'Bierz póki jeszcze są:',
-		'Ostatnie sztuki:',
-		'Zobacz co mamy w sprzedaży:'
+		'Today we can recommend:',
+		'Best products:`',
+		'Take while you still can:',
+		'last items:',
+		'See what we can recommend:'
 	];
 </script>
 
@@ -26,7 +26,7 @@
 	{#each products as product}
 		<Product {product} />
 	{/each}
-	<Card><a href="/search"><h1 class="link">ZOBACZ WIĘCEJ PRODUKTÓW</h1></a></Card>
+	<Card><a href="/search"><h1 class="link">SEE ALL PRODUCTS</h1></a></Card>
 </Products>
 
 <style>
