@@ -65,10 +65,10 @@
 			max-width: 50%;
 		}
 		img {
-			width: 400px;
-			height: 400px;
-			max-width: fit-content;
-			max-height: fit-content;
+			max-width: 400px;
+			max-height: 400px;
+			width: fit-content;
+			height: fit-content;
 			padding-right: 20px;
 		}
 	}
