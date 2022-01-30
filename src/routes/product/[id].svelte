@@ -67,6 +67,8 @@
 		img {
 			width: 400px;
 			height: 400px;
+			max-width: fit-content;
+			max-height: fit-content;
 			padding-right: 20px;
 		}
 	}
