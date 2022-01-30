@@ -2,7 +2,7 @@
 	import { hidden, alertText } from '../../stores/alertStore';
 </script>
 
-<div class="alert {$hidden ? 'fade-out' : ''}">{$alertText}</div>
+<div class="alert {$hidden ? 'alert__fadeout' : ''}">{$alertText}</div>
 
 <style>
 	.alert {
@@ -17,7 +17,7 @@
 		border-radius: 10px;
 		transition: all 0.5s;
 	}
-	.fade-out {
+	.alert__fadeout {
 		opacity: 0;
 	}
 </style>

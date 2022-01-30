@@ -20,6 +20,8 @@
 		border: none;
 		background: transparent;
 		width: 40px;
+		color: black;
+		text-decoration: none;
 	}
 	button:hover {
 		cursor: pointer;
