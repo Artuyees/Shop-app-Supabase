@@ -20,7 +20,12 @@
 	}
 	@media (max-width: 768px) {
 		.box {
-			margin: 50px 10px 200px 10px;
+			width: 100%;
+			margin: none;
+			box-shadow: none;
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+			border-radius: 0;
 		}
 	}
 </style>

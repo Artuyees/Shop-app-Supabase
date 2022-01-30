@@ -67,8 +67,8 @@
 		img {
 			max-width: 400px;
 			max-height: 400px;
-			width: fit-content;
-			height: fit-content;
+			width: 75%;
+			height: 75%;
 			padding-right: 20px;
 		}
 	}
