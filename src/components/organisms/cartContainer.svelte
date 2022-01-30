@@ -26,6 +26,7 @@
 			border-top: 1px solid gray;
 			border-bottom: 1px solid gray;
 			border-radius: 0;
+			padding: 10px 0px;
 		}
 	}
 </style>
