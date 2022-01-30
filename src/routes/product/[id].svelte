@@ -44,10 +44,9 @@
 
 <style>
 	.card {
-		margin-top: 100px;
+		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 200px;
 		display: flex;
 		max-width: max-content;
 		flex-direction: column;
@@ -99,7 +98,7 @@
 		font-weight: bold;
 	}
 	img {
-		width: 100%;
+		width: 400px;
 		object-fit: cover;
 	}
 </style>

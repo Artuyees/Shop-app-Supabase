@@ -3,7 +3,7 @@
 </script>
 
 <div class="price__container">
-	Final cost: <h1>{Math.floor(sum)} €</h1>
+	Final cost: <h1>{sum.toFixed(2)} €</h1>
 	<input type="submit" value="ZAMÓW" />
 </div>
 
@@ -34,5 +34,10 @@
 	}
 	input:focus {
 		background-color: #fa4902;
+	}
+	@media (max-width: 768px) {
+		.price__container {
+			justify-content: center;
+		}
 	}
 </style>

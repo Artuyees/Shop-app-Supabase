@@ -14,8 +14,8 @@
 		background-color: #f0f0f0;
 		width: 100%;
 		margin-top: 10px;
-		padding: 10px;
 		height: fit-content;
 		font-size: xx-large;
+		padding: 10px 0;
 	}
 </style>

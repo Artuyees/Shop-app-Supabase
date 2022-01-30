@@ -10,23 +10,20 @@
 </svelte:head>
 <Alert />
 <div class="everything">
-	<div class="main__content">
-		<MainBar />
+	<MainBar />
+	<div class="content-wrap">
 		<slot />
-		<About />
 	</div>
+	<About />
 </div>
 
 <style>
 	.everything {
 		min-height: 100vh;
-		display: block;
+		height: 100%;
 		position: relative;
 	}
-	.main__content {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		justify-content: center;
+	.content-wrap {
+		padding-bottom: 60px;
 	}
 </style>

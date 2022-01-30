@@ -14,7 +14,7 @@
 
 	const listOfTexts = [
 		'Today we can recommend:',
-		'Best products:`',
+		'Best products:',
 		'Take while you still can:',
 		'last items:',
 		'See what we can recommend:'

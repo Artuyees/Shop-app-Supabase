@@ -13,9 +13,14 @@
 		width: fit-content;
 		max-width: 1000px;
 		min-width: fit-content;
-		margin: 100px auto;
+		margin: 50px auto;
 		border-radius: 10px;
 		padding: 10px;
 		box-shadow: 0px 0px 27px -3px rgba(92, 91, 91, 1);
+	}
+	@media (max-width: 768px) {
+		.box {
+			margin: 50px 10px 200px 10px;
+		}
 	}
 </style>
