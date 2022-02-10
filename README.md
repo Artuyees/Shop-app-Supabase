@@ -11,4 +11,3 @@
 # To do
 
 - clean up spaghetti code
-- fix mobile layout
