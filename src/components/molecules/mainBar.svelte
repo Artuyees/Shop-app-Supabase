@@ -3,34 +3,49 @@
 	import HomeButton from '../atoms/homeButton.svelte';
 	import Logo from '../atoms/logo.svelte';
 	import SearchBar from '../atoms/searchBar.svelte';
-
-	let mobile = false;
 </script>
 
 <div class="main">
+	<div class="aligner" />
 	<Logo />
-	{#if mobile == false}
+	<div class="items">
 		<SearchBar />
-		<div class="mainBar__icons">
+		<div class="main__icons ">
 			<CartButton />
 			<HomeButton />
 		</div>
-	{/if}
+	</div>
 </div>
 
 <style>
 	.main {
-		position: sticky;
-		top: 0px;
-		border-bottom: 1px solid gray;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		height: 50px;
+		height: auto;
+		padding: 0.5rem 0;
 		width: 100%;
 		background-color: white;
 	}
-	.mainBar__icons {
+	.aligner {
+		display: none;
+		width: 1rem;
+		height: 1rem;
+	}
+	.items {
+		display: none;
+		width: auto;
+		gap: 0.5rem;
+	}
+	@media (min-width: 768px) {
+		.items {
+			display: flex;
+		}
+		.aligner {
+			display: flex;
+		}
+	}
+	.main__icons {
 		display: flex;
 	}
 </style>

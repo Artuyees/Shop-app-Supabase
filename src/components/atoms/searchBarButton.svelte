@@ -41,7 +41,7 @@
 		background: none;
 		align-items: center;
 		justify-content: center;
-		color: black;
+		color: #999;
 		border: none;
 	}
 	.searchbar__button:hover {

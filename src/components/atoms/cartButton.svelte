@@ -38,11 +38,12 @@
 	}
 	.cart_length {
 		position: absolute;
-		top: 25px;
+		top: 30px;
 		background-color: orange;
 		padding: 2px;
-		width: 20px;
-		height: 20px;
+		font-size: 12px;
+		width: 15px;
+		height: 15px;
 		text-align: center;
 		border-radius: 100%;
 	}

@@ -11,5 +11,12 @@
 	a {
 		text-decoration: none;
 		color: black;
+		display: flex;
+		font-size: 2rem;
+	}
+	@media (min-width: 768px) {
+		a {
+			position: absolute;
+		}
 	}
 </style>
