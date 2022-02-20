@@ -14,7 +14,7 @@
 		display: flex;
 		font-size: 2rem;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 1366px) {
 		a {
 			position: absolute;
 		}
