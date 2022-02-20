@@ -8,26 +8,26 @@
 	<a class="productInfo__link" href={`product/${product.id}`}>
 		<div class="productInfo__img">
 			<img src={product.img} alt="xd" />
-			<p>
+			<span>
 				{product.product_name}
-			</p>
+			</span>
 		</div>
 	</a>
 	<div class="info">
-		{#if product.on_sale == null}<h3>{product.price} €</h3>{:else}<h3>
+		{#if product.on_sale == null}<span>{product.price}€</span>{:else}<span>
 				<div class="sale">
-					<span class="old_price">{product.price} €</span>
+					<span class="old_price">{product.price}€</span>
 					<span class="new_price"
-						>{(product.price - product.price * (product.on_sale / 100)).toFixed(2)} €</span
+						>&nbsp;{(product.price - product.price * (product.on_sale / 100)).toFixed(2)} €</span
 					>
 				</div>
-			</h3>{/if}
+			</span>{/if}
 		<SmallButton disabled={!product.in_stock} {product} />
 	</div>
 </Card>
 
 <style>
-	.productInfo__link:hover p {
+	.productInfo__link:hover span {
 		font-weight: bold;
 	}
 	.productInfo__link:hover img {
@@ -35,34 +35,33 @@
 		transform: scale(1.02);
 	}
 	.productInfo__img {
-		height: 200px;
+		width: 100%;
 	}
+
 	a {
 		text-decoration: none;
 		color: black;
 	}
 	.info {
-		height: 20%;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	p {
+	span {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 
 	img {
-		width: 150px;
-		height: 150px;
+		width: 100%;
+		height: 16rem;
 		object-fit: cover;
 		margin: auto;
 	}
 	.sale {
 		display: flex;
-		flex-direction: column;
 	}
 	.old_price {
 		color: gray;

@@ -1,6 +1,6 @@
 <script>
 	import supabase from '$lib/db';
-	import Product from '../components/molecules/productInfo.svelte';
+	import Product from '../components/molecules/product.svelte';
 	import { onMount } from 'svelte';
 	import Products from '../components/organisms/products.svelte';
 	import PromotionsBar from '../components/molecules/promotionsBar.svelte';
@@ -8,28 +8,26 @@
 
 	let products = [];
 	onMount(async () => {
-		let { data, error } = await supabase.from('Products').select('*').limit(3);
+		let { data } = await supabase.from('Products').select('*').limit(3);
 		products = data;
 	});
-
-	const listOfTexts = [
-		'Today we can recommend:',
-		'Best products:',
-		'Take while you still can:',
-		'last items:',
-		'See what we can recommend:'
-	];
 </script>
 
-<PromotionsBar list={listOfTexts} />
-<Products>
-	{#each products as product}
-		<Product {product} />
-	{/each}
-	<Card><a href="/search"><h1 class="link">SEE ALL PRODUCTS</h1></a></Card>
-</Products>
+<PromotionsBar />
+<main>
+	<Products>
+		{#each products as product}
+			<Product {product} />
+		{/each}
+		<Card><a href="/search"><h1 class="link">SEE ALL PRODUCTS</h1></a></Card>
+	</Products>
+</main>
 
 <style>
+	main {
+		display: flex;
+		justify-content: center;
+	}
 	h1 {
 		line-height: 200%;
 	}

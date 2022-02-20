@@ -9,10 +9,15 @@
 	.container {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		flex-wrap: wrap;
 		gap: 5px;
+		max-width: 72rem;
 		padding: 0px 20px;
-		margin-bottom: 200px;
+	}
+	@media (max-width: 768px) {
+		.container {
+			justify-content: center;
+			margin-bottom: 100px;
+		}
 	}
 </style>
