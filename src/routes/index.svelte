@@ -24,6 +24,9 @@
 </main>
 
 <style>
+	h1 {
+		text-align: center;
+	}
 	main {
 		display: flex;
 		justify-content: center;
