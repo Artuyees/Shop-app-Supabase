@@ -3,7 +3,7 @@
 	import Product from '../components/molecules/product.svelte';
 	import { onMount } from 'svelte';
 	import Products from '../components/organisms/products.svelte';
-	import PromotionsBar from '../components/molecules/promotionsBar.svelte';
+	import PromotionsBar from '../components/molecules/Navbar.svelte';
 	import Card from '../components/atoms/card.svelte';
 
 	let products = [];
