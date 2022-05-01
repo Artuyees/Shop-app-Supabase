@@ -2,11 +2,11 @@
 
 # Features
 
-Svelte front-end
-Supabase as back-end
-Preserved cart on refresh
-Search bar
-Alert when adding items to the cart
+- Svelte front-end
+- Supabase as back-end
+- Preserved cart on refresh
+- Search bar
+- Alert when adding items to the cart
 
 # To do
 
