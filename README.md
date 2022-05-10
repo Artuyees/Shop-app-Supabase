@@ -8,6 +8,3 @@
 - Search bar
 - Alert when adding items to the cart
 
-# To do
-
-- clean up spaghetti code
