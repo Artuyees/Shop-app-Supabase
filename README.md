@@ -1,6 +1,8 @@
 # Simple online shop website
 
-# Features
+# I had to terminate deployment of this project so i could make room for new one.
+
+## Features
 
 - Svelte front-end
 - Supabase as back-end
